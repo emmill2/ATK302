@@ -1,6 +1,6 @@
 function setup() {
   // put setup code here
-  createCanvas(1550, 750) ;
+  createCanvas(750, 750) ;
 }
 
 function draw() {
@@ -38,7 +38,7 @@ if (mouseIsPressed) {
   triangle(205, 365, 260, 312, 95, 300);
   fill('lightGreen');
   ellipse(360, 215, 75, 75);
-  ellipse(375, 225, 60, 60);
+  ellipse(375, 235, 55, 55);
 
   //leg 2
   fill('lightGreen');
