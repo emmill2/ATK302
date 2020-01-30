@@ -15,11 +15,15 @@ if (mouseIsPressed) {
   //background
   fill('green');
   rect(0, 510, 775, 500);
-
+//scales
+ellipse(315,255,30,30)
+ellipse(292,278,30,30)
+ellipse(269,300,30,30)
 
 // dino
   fill('#2BC779');
   quad(360, 270, 335, 300, 362, 290, 400, 305);
+
 
 
   //leg 1
@@ -38,7 +42,14 @@ if (mouseIsPressed) {
   triangle(205, 365, 260, 312, 95, 300);
   fill('lightGreen');
   ellipse(360, 215, 75, 75);
-  ellipse(375, 235, 55, 55);
+  fill('white')
+  ellipse(355, 210, 18, 25);
+  ellipse(385, 210, 18, 25);
+    fill('black')
+    ellipse(355, 212, 10, 10);
+    ellipse(385, 212, 10, 10);
+  fill('lightGreen');
+  ellipse(375, 235, 55, 45);
 
   //leg 2
   fill('lightGreen');
@@ -58,11 +69,15 @@ else {
 //background
     fill('green');
     rect(0, 510, 775, 500);
+//scales
+ellipse(315,355,30,30)
+ellipse(292,378,30,30)
+ellipse(269,400,30,30)
 //dino
   fill('#2BC779');
   quad(360, 370, 335, 400, 362, 390, 400, 405);
   fill('lightGreen');
-    ellipse(375, 325, 60, 60)
+    ellipse(375, 325, 60, 55)
     ellipse(360, 315, 75, 75);
     //leg 1
     fill('#2BC779');
