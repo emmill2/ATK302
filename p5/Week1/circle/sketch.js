@@ -3,8 +3,8 @@ function setup() {
   createCanvas(500, 500);
 }
 
-function draw() {
+function draw(red) {
   // put drawing code here
 
-  ellipse(mouseX, mouseY, 10, 10) ;
+  ellipse(mouseX, mouseY, 120, 120) ;
 }
