@@ -20,8 +20,7 @@ if (mouseIsPressed) {
 // dino
   fill('#2BC779');
   quad(360, 270, 335, 300, 362, 290, 400, 305);
-  fill('lightGreen');
-  ellipse(360, 215, 75, 75)
+
 
   //leg 1
   fill('#2BC779');
@@ -37,6 +36,9 @@ if (mouseIsPressed) {
   quad(333, 240,372, 244, 305, 395, 205, 365);
   fill('lightGreen');
   triangle(205, 365, 260, 312, 95, 300);
+  fill('lightGreen');
+  ellipse(360, 215, 75, 75);
+  ellipse(375, 225, 60, 60);
 
   //leg 2
   fill('lightGreen');
@@ -60,6 +62,7 @@ else {
   fill('#2BC779');
   quad(360, 370, 335, 400, 362, 390, 400, 405);
   fill('lightGreen');
+    ellipse(375, 325, 60, 60)
     ellipse(360, 315, 75, 75);
     //leg 1
     fill('#2BC779');
