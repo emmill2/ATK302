@@ -18,17 +18,19 @@ if (mouseIsPressed) {
 
 
 // dino
+fill('#2BC779');
+quad(360, 270, 335, 300, 362, 290, 400, 305);
   fill('lightGreen');
   ellipse(360, 215, 75, 75)
 
   //leg 1
-  fill('lightGreen');
+  fill('#2BC779');
   quad(240, 365, 290, 395, 273, 524, 230, 535);
-  fill('lightGreen');
+  fill('#2BC779');
   quad( 230, 535, 273, 524, 313, 544, 297, 553);
-  fill('lightGreen');
+  fill('#2BC779');
   quad(313, 544, 312, 560, 240, 575, 250, 565);
-  fill('lightGreen');
+  fill('#2BC779');
   quad(250, 565, 240, 575, 305, 583, 305, 569);
   //body and tail
   fill('lightGreen');
@@ -47,25 +49,28 @@ if (mouseIsPressed) {
   quad(265, 565, 255, 575, 320, 583, 320, 569);
 
   //arms
-  fill('lightGreen');
-  quad(335, 295, 325, 305, 400, 313, 400, 299);
 
+  //arms
+  fill('lightGreen');
+  quad(350, 275, 325, 305, 352, 295, 390, 310);
 }
 else {
 //background
     fill('green');
     rect(0, 510, 775, 500);
 //dino
-fill('lightGreen');
+  fill('#2BC779');
+  quad(360, 370, 335, 400, 362, 390, 400, 405);
+  fill('lightGreen');
     ellipse(360, 315, 75, 75);
     //leg 1
-    fill('lightGreen');
+    fill('#2BC779');
     quad( 240, 465, 290, 495, 273, 524, 230, 535);
-    fill('lightGreen');
-    quad( 230, 535, 273, 524, 313, 544, 297, 553);
-    fill('lightGreen');
+    fill('#2BC779');
+    quad( 230, 535, 273, 524, 313, 544, 298, 553);
+    fill('#2BC779');
     quad(313, 544, 312, 560, 240, 575, 250, 565);
-    fill('lightGreen');
+    fill('#2BC779');
     quad(250, 565, 240, 575, 305, 583, 305, 569);
     //body and tail
     fill('lightGreen');
@@ -83,6 +88,6 @@ fill('lightGreen');
     quad(265, 565, 255, 575, 320, 583, 320, 569);
     //arms
     fill('lightGreen');
-    quad(335, 395, 325, 405, 400, 413, 400, 399);
+    quad(350, 375, 325, 405, 352, 395, 390, 410);
   }
 }
