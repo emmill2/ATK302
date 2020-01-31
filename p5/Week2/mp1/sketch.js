@@ -7,9 +7,9 @@ function draw() {
   // put drawing code here
   background('lightBlue') ;
 
-  fill('black');
-  textSize(40);
-  text(mouseX + ", " + mouseY, 100, 100)
+//  fill('black');
+//  textSize(40);
+//  text(mouseX + ", " + mouseY, 100, 100)
 
 if (mouseIsPressed) {
   //background
