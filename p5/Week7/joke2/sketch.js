@@ -3,7 +3,7 @@ var myState = 0;
 
 function setup() {
   // put setup code here
-  createCanvas(800, 800);
+  createCanvas(displayWidth, displayHeight);
 }
 
 function draw() {
@@ -13,20 +13,21 @@ function draw() {
 
   switch (myState) {
     case 0:
-      text("Why was the pebble sad?", 100, 100);
+      textSize(40);
+      text("Why did the painting go to jail?", 100, 100);
       myTimer++;
       if (myTimer > 200) {
-              myState = 1 ;
-              myTimer = 0 ;
-        }
+        myState = 1;
+        myTimer = 0;
+      }
       break;
     case 1:
-      text("Because he wished he was a little boulder", 100, 100);
+      text("Because he was FRAMED", 100, 100);
       myTimer++;
       if (myTimer > 200) {
-              myState= 0 ;
-              myTimer = 0 ;
-        }
+        myState = 0;
+        myTimer = 0;
+      }
 
 
       break;

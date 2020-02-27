@@ -2,7 +2,7 @@ var myState = 0;
 
 function setup() {
   // put setup code here
-  createCanvas(800, 800);
+  createCanvas(displayWidth, displayHeight);
 }
 
 function draw() {
@@ -12,6 +12,7 @@ function draw() {
 
   switch (myState) {
     case 0:
+      textSize(40);
       text("Why was the pebble sad?", 100, 100);
       break;
     case 1:
