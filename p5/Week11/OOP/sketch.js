@@ -8,7 +8,7 @@ function setup() {
 }
 
 function draw() {
-  background('lightBlue');
+  background('red');
   for (var i = 0; i < cars.length; i++) {
     cars[i].display();
     cars[i].drive();
