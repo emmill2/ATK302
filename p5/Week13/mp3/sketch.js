@@ -12,6 +12,7 @@ function setup() {
   rectMode(CENTER);
   ellipseMode(CENTER);
   imageMode(CENTER);
+  textAlign(CENTER);
 }
 
 function draw() {
