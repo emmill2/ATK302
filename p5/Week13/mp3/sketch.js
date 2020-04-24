@@ -2,6 +2,8 @@ var cars = [];
 var frogPos ;
 var myState = 0;
 var timer = 20 * 60;
+var pick;
+var guitar;
 
 function setup() {
   createCanvas(windowWidth, windowHeight)
@@ -9,10 +11,14 @@ function setup() {
       cars.push(new Car());
   }
   frogPos = createVector(width/2, height-100);
+  guitar = loadImage('assets/guitar.png');
+  pick = loadImage('assets/pick.png');
+
   rectMode(CENTER);
   ellipseMode(CENTER);
   imageMode(CENTER);
   textAlign(CENTER);
+
 }
 
 function draw() {
@@ -20,8 +26,8 @@ function draw() {
     case 0:
       background('lightBlue');
       textSize(24);
-      text("Use WASD or the Arrow Keys to catch all the squares!", 200, 200);
-      text("press any key to begin", 200, 300)
+      text("Use WASD or the Arrow Keys to strum the guitar!", width/2, height/2);
+      text("press any key to begin",width/2)
       break;
 
     case 1:
@@ -35,15 +41,15 @@ function draw() {
     case 2:
       background('lightBlue');
       textSize(24);
-      text("Winner Winner Chicken Dinner", 200, 200)
-      text("press any key to continue", 200, 300)
+      text("Congratulations! Carnegie Hall Awaits :)",width/2, height/2)
+      text("press any key to play again", width/2, 400)
       break;
 
     case 3:
       background('lightBlue');
       textSize(24);
-      text("oof too bad", 200, 200)
-      text("press any key to try again", 200, 300)
+      text("oof, you were unable to finish your song", width/2, height/2)
+      text("press any key to try again", width/2, 400)
 
       break;
 
@@ -85,18 +91,19 @@ function game(){
   }
   //frog
   fill('white');
-  ellipse(frogPos.x, frogPos.y, 100, 100);
+  image(guitar, frogPos.x, frogPos.y, 150, 150);
   checkForKeys();
+
 }
 
 
 
 
 function checkForKeys() {
-  if (keyIsDown(LEFT_ARROW)||keyIsDown(keyCode = 65)) frogPos.x -=5;
-  if (keyIsDown(RIGHT_ARROW)||keyIsDown(keyCode = 68)) frogPos.x +=5;
-  if (keyIsDown(UP_ARROW)||keyIsDown(keyCode = 87)) frogPos.y -=5;
-  if (keyIsDown(DOWN_ARROW)||keyIsDown(keyCode = 83)) frogPos.y +=5;
+  if (keyIsDown(LEFT_ARROW)||keyIsDown(keyCode = 65)) frogPos.x -=8;
+  if (keyIsDown(RIGHT_ARROW)||keyIsDown(keyCode = 68)) frogPos.x +=8;
+  if (keyIsDown(UP_ARROW)||keyIsDown(keyCode = 87)) frogPos.y -=8;
+  if (keyIsDown(DOWN_ARROW)||keyIsDown(keyCode = 83)) frogPos.y +=8;
 }
 
 //car class
@@ -111,8 +118,7 @@ function Car() {
 
 // methods
 this.display = function() {
-  fill(this.r, this.g, this.b);
-  rect(this.pos.x,this.pos.y,50,50);
+  image(pick, this.pos.x, this.pos.y, 50, 50)
 }
 this.drive = function(){
   this.pos.add(this.vel);
