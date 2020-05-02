@@ -63,11 +63,11 @@ function draw() {
   text("z = " + z.toFixed(4), 25, 190);
 
   // MORE DECORATIONS - write that pretty ATK type on top.
-  fill('white');
+  fill('black');
   noStroke();
-  textSize(300);
+  textSize(200);
   textAlign(CENTER);
-  text("atk", width / 2, height / 2);
+  text("gremlin time", width / 2, height / 2);
 
 }
 
