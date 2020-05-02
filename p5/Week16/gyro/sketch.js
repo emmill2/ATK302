@@ -18,7 +18,7 @@ function setup() {
   beta = 0;
   gamma = 0;
 
-  bunnyImage = loadImage("assets/gremlin.png");
+  bunnyImage = loadImage("assets/gremlin.jpg");
   imageMode(CENTER);
   rectMode(CENTER);
 
