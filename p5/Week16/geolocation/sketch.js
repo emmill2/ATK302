@@ -10,9 +10,9 @@ function setup() {
 }
 
 function draw() {
-	fill(0) ;
+	fill('black') ;
 	textSize(12) ;
-	text("hello", 20, 20) ;
+	text("This is your current location! Crazy, right?", 20, 20) ;
     text(locationData.latitude, 40, 40) ;
     text(locationData.longitude, 40, 60) ;
     text(locationData.accuracy, 40, 80) ;
