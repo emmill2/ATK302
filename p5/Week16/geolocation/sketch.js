@@ -5,6 +5,7 @@ function preload(){
 }
 
 function setup() {
+  background("lightblue")
 	createCanvas(500, 500) ;
 
 }
