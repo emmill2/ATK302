@@ -65,7 +65,7 @@ function draw() {
   // MORE DECORATIONS - write that pretty ATK type on top.
   fill('black');
   noStroke();
-  textSize(200);
+  textSize(150);
   textAlign(CENTER);
   text("gremlin time", width / 2, height / 2);
 
